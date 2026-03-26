@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forside</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <!--Font import-->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+    <!--font awsome import-->
+    <script
+      src="https://kit.fontawesome.com/4e7063d4c4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav>
+      <div class="header">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo-2.png" class="picture" alt="Lily's cakes" />
+          </a>
+        </div>
+
+        <div class="nav-menu">
+          <ul class="nav-links">
+            <li><a href="kager.html">Kager</a></li>
+            <li><a href="galleri.html">Galleri</a></li>
+            <li><a href="om-os.html">Om os</a></li>
+            <li><a href="kontakt-os.html">Kontakt os</a></li>
+            <li>
+              <a href="kurv.html"
+                ><i class="fa-solid fa-bag-shopping" style="font-size: 40px"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="promo">
+        <p>
+          Glæd dig! Vores påskeudsalg starter snart! Kun
+          <span id="promo-timer"></span>tilbage!
+        </p>
+      </div>
+    </nav>
+    <div class="forside-kasse1 sektion">
+      <div class="forside-kasse1">
+        <img
+          src="images/assortment-pieces-cake.jpg"
+          class="billede-forside1"
+          alt="Kage"
+        />
+        <div class="tekst-på-billede">
+          <h2>
+            Custom kager <br />
+            <a href="kager.html">Klik her</a>
+          </h2>
+        </div>
+        <div class="forside-kasse1-boks1">
+          <img
+            src="images/cake-type1-1.jpg"
+            class="billede-forside2"
+            alt="Kage"
+          />
+          <img
+            src="images/cake-type1-3.jpg"
+            class="billede-forside2"
+            alt="Kage"
+          />
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div>
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="index.html">Forside</a></li>
+          <li><a href="index.html">Kager</a></li>
+          <li><a href="index.html">Galleri</a></li>
+          <li><a href="index.html">Om os</a></li>
+          <li><a href="index.html">Kontakt os</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontakt os</h4>
+        <ul>
+          <li>E-mail: lilyscakes@gmail.com</li>
+          <li>Tel: 12 34 56 78</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Besøg vores butik</h4>
+        <ul>
+          <li>Adresse: Rouladegade 21, 2300 København S</li>
+          <li>
+            <h4>Åbningstider: <span id="openingHour"></span></h4>
+          </li>
+          <li>Mandage: Lukket</li>
+          <li>Tirsdag - Fredag: 09:00 - 18:00</li>
+          <li>Lørdag-søndag: 10:00 - 17:00</li>
+        </ul>
+      </div>
+    </footer>
+    <script src="javascript.js"></script>
+  </body>
+</html>

@@ -1,0 +1,361 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Noto Serif", serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+/*Navigation menu*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+}
+
+/*Nav*/
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+.logo {
+  margin: 10px 0 0 10px;
+}
+.picture {
+  width: 120px;
+}
+
+.nav-links li {
+  display: inline;
+}
+a {
+  color: black;
+  font-size: 20px;
+}
+.nav-links a {
+  font-size: 25px;
+}
+a:hover {
+  color: #427588;
+  text-decoration: underline;
+}
+.aktiv-side {
+  font-weight: 500;
+}
+
+.promo {
+  background-color: #fed28f;
+  display: block;
+  padding: 10px;
+}
+
+.promo p {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/*Styling for alle sider*/
+.sektion {
+  margin: 60px 0;
+}
+
+/*Footer*/
+footer {
+  background-color: #427588;
+  display: flex;
+  justify-content: space-around;
+  max-width: 100%;
+}
+
+footer a {
+  color: white;
+  list-style: none;
+  margin-bottom: 15px;
+  text-decoration: underline;
+  font-size: 18px;
+}
+
+footer li {
+  color: white;
+  list-style: none;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+footer ul {
+  margin-bottom: 40px;
+}
+
+footer a:hover {
+  color: #c7e3de;
+}
+
+footer h4 {
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+  margin: 30px 0 20px 0;
+}
+
+footer div {
+  max-width: 20%;
+}
+
+/*Width limit så hjemmesiden ikke strækker ud i uendelighed*/
+@media screen and (min-width: 1200px) {
+  body {
+    max-width: 1500px;
+    margin: auto;
+  }
+}
+
+/*Forside*/
+.forside-kasse1 {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.billede-forside1 {
+  width: 800px;
+  margin: auto;
+}
+
+.tekst-på-billede {
+  position: absolute;
+  margin: 10px 20px;
+}
+
+.tekst-på-billede a,
+.tekst-på-billede h2 {
+  font-size: 40px;
+}
+
+.billede-forside2 {
+  width: 260px;
+}
+
+.forside-kasse1-boks1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 30px;
+}
+
+/*Kager side*/
+.kager-kasse1 {
+  width: 550px;
+  margin: 60px auto;
+}
+
+.kager-kasse1 h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.kage-række {
+  display: flex;
+  justify-content: space-around;
+}
+
+.kage-billede {
+  width: 400px;
+}
+
+.kage-billede:hover {
+  opacity: 0.7;
+}
+
+/*kage-info*/
+.tilbage-knap {
+  margin: 20px 0;
+}
+
+.kage-info-tekst {
+  margin-left: 10%;
+}
+
+.button {
+  color: black;
+  text-align: center;
+  margin: 15px 10px 15px 0;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.btn1 {
+  background-color: white;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.btn2,
+.btn2 a {
+  background-color: #427588;
+  color: white;
+  font-size: 20px;
+  padding: 10px 80px;
+}
+
+.btn1:hover {
+  background-color: #c7e3de;
+}
+
+.btn2 a:hover {
+  color: #fed28f;
+}
+
+.selector option {
+  font-size: 10px;
+}
+
+.kage-info-storboks {
+  display: flex;
+  margin: 30px 0;
+}
+
+/* stylling til billede slider */
+.kage-billede-type2 {
+  width: 650px;
+}
+
+.kage-billede-type3 {
+  width: 150px;
+  cursor: pointer;
+}
+
+.kage-billede-type3:hover {
+  opacity: 0.7;
+}
+
+/* kage info tekst*/
+
+.selector select {
+  height: 50px;
+  font-size: 20px;
+  margin: 10px 0;
+  padding: 0 5px;
+}
+
+.selector option {
+  font-size: 20px;
+}
+
+.kage-info-tekst h1 {
+  margin-bottom: 15px;
+  font-size: 40px;
+}
+
+.kage-info-tekst h2 {
+  margin-top: 20px;
+  font-size: 40px;
+}
+
+.highlighted {
+  background-color: #c7e3de;
+}
+
+/*Kurv*/
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type="text"] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
